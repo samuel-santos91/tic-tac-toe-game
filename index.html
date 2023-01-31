@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time to Play!</title>
+    <link rel="stylesheet" href="style/players.css" />
+    <link rel="stylesheet" href="style/choosename.css" />
+    <link rel="stylesheet" href="style/gameboard.css" />
+    <link rel="stylesheet" href="style/endgame.css" />
+    <script src="javascript/command.js" defer></script>
+    <script src="javascript/commandgame.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Tic Tac Toe</h1>
+    </header>
+
+    <aside class="choose-name" id="select-name">
+      <form>
+        <div id="backdrop"></div>
+        <div class="pop-up">
+          <p id="title-name-input"><strong>Choose your name</strong></p>
+          <div>
+            <label for="name-input">Player name</label>
+            <input
+              type="text"
+              id="name-input"
+              name="nameinput"
+              minlength="3"
+              required
+            />
+            <p id="invalid-name"></p>
+          </div>
+          <div id="list-button">
+            <button id="cancel-button" type="reset">Cancel</button>
+            <button id="confirm-button" type="submit">Confirm</button>
+          </div>
+        </div>
+      </form>
+    </aside>
+
+    <main>
+      <section id="players">
+        <div class="player-box">
+          <ul>
+            <li><strong>Player 1</strong></li>
+            <li class="insert-name">
+              <a href="#select-name" id="insert-name-player1" data-playerid="1"
+                >PLACE NAME</a
+              >
+            </li>
+            <li class="symbol"><strong>x</strong></li>
+          </ul>
+        </div>
+        <div class="player-box">
+          <ul>
+            <li><strong>Player 2</strong></li>
+            <li class="insert-name">
+              <a href="#select-name" id="insert-name-player2" data-playerid="2"
+                >PLACE NAME</a
+              >
+            </li>
+            <li class="symbol"><strong>o</strong></li>
+          </ul>
+        </div>
+      </section>
+      <a href="#container"
+        ><button id="start-game-button">
+          <strong>Start New Game</strong>
+        </button></a
+      >
+      <aside id="end-game-pop-up">
+        <div id="pop-up-message-block">
+          <p class="win-pop-up-message">
+            Congratulations!<br />
+            <span id="player-name"></span>
+            you are the winner!
+          </p>
+          <p class="draw-pop-up-message">It's a DRAW!</p>
+          <button id="resume-new-game-btn">
+            <strong>Resume New Game</strong>
+          </button>
+        </div>
+      </aside>
+
+      <section id="gameboard">
+        <p>It's your turn <span id="player-turn">PLAYER'S NAME</span></p>
+        <div id="container">
+          <div class="board"></div>
+          <div class="board"></div>
+          <div class="board"></div>
+
+          <div class="board"></div>
+          <div class="board"></div>
+          <div class="board"></div>
+
+          <div class="board"></div>
+          <div class="board"></div>
+          <div class="board"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

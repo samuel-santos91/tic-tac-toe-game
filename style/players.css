@@ -1,0 +1,98 @@
+html {
+  background-color: rgb(30, 28, 28);
+  margin: 0.6rem;
+  border-radius: 10px;
+}
+
+body {
+  border-radius: 10px;
+  background-image: linear-gradient(rgb(3, 90, 203), rgb(210, 233, 252));
+}
+
+header {
+  text-align: center;
+  height: 10rem;
+  padding-top: 2rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+main {
+  text-align: center;
+  height: 100%;
+  padding-bottom: 5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+h1{
+  font-size: 3rem;
+  color: rgb(210, 233, 252);
+}
+
+#players {
+  display: flex;
+  justify-content: center;
+}
+
+div.player-box {
+  height: 11rem;
+  width: 16rem;
+  background-color: rgb(233, 254, 255);
+  border-radius: 4px;
+  margin: 2.5rem 1rem;
+  box-shadow: 1px 5px 10px black;
+}
+
+ul {
+  text-align: center;
+  padding: 1rem;
+}
+
+li {
+  list-style-type: none;
+  margin: 0.4rem;
+}
+
+.symbol {
+  font-size: 3rem;
+}
+
+strong {
+  height: 1rem;
+}
+
+li.insert-name a {
+  color: rgb(3, 90, 203);
+  font-weight: bold;
+}
+
+li.insert-name a:hover {
+  color: rgb(8, 52, 109);
+}
+
+a {
+  text-decoration: none;
+}
+
+#start-game-button {
+  padding: 0.5rem 1.3rem;
+  border-style: none;
+  border-radius: 4px;
+  box-shadow: 1px 5px 10px black;
+  background-color: rgb(3, 90, 203);
+  color: rgb(210, 233, 252);
+  cursor: pointer;
+}
+
+#start-game-button:hover {
+  box-shadow: 0.5px 3px 7px black;
+  background-color: rgb(8, 52, 109);
+}
+
+@media (max-width: 520px) {
+  #players {
+    flex-direction: column;
+    align-items: center;
+  }
+}

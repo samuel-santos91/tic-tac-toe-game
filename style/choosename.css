@@ -1,0 +1,107 @@
+.choose-name {
+  display: none;
+}
+
+.choose-name:target {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(30, 28, 28, 0.9);
+}
+
+.choose-name div.pop-up {
+  margin: auto;
+  margin-top: 13rem;
+  position: relative;
+  height: 11rem;
+  width: 30rem;
+  background-color: rgb(233, 254, 255);
+  border-radius: 3px;
+  z-index: 1;
+}
+
+#title-name-input {
+  font-size: 1.3rem;
+  text-align: center;
+  color: rgb(3, 90, 203);
+  padding: 1rem;
+  margin: 0;
+}
+
+#select-name label {
+  display: block;
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+
+input#name-input {
+  display: block;
+  margin: auto;
+  width: 12rem;
+  border-color: rgb(3, 90, 203);
+  border-style: solid;
+  border-radius: 2px;
+}
+
+p#invalid-name {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+div#list-button {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+#confirm-button {
+  padding: 0.3rem 1.2rem;
+  border-style: none;
+  border-radius: 4px;
+  box-shadow: 2px 3px 5px black;
+  background-color: rgb(3, 90, 203);
+  color: rgb(210, 233, 252);
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+#confirm-button:hover {
+  box-shadow: 1px 2px 3px black;
+  background-color: rgb(8, 52, 109);
+}
+
+#cancel-button {
+  padding: 0.3rem 1.2rem;
+  border-style: none;
+  border-radius: 4px;
+  box-shadow: 2px 3px 5px black;
+  background-color: rgb(233, 254, 255);
+  color: rgb(3, 90, 203);
+  cursor: pointer;
+}
+
+#cancel-button:hover {
+  box-shadow: 1px 2px 3px black;
+  background-color: rgb(176, 191, 192);
+}
+
+@media (max-width: 48rem) {
+  .choose-name div.pop-up {
+    margin-top: 13rem;
+    width: 22rem;
+  }
+}
