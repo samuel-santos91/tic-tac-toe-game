@@ -8,7 +8,7 @@
 <img width="417" alt="Screen Shot 2023-01-31 at 16 01 57" src="https://user-images.githubusercontent.com/107240729/215670479-fe4b5348-9bc7-41a8-9bde-b02041a42a89.png">
   </div>
 </div>
-  <img width="417" alt="Screen Shot 2023-01-31 at 16 01 31" src="https://user-images.githubusercontent.com/107240729/215670424-52397483-dd2c-4143-9e4f-1ef72072f8f1.png">
+
   
 
 
